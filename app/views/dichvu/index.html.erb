@@ -1,0 +1,484 @@
+
+<% content_for :header do %>
+
+<style type="text/css" media="screen">
+    .row{
+      margin-top: 50px;
+      margin-left: 150px;
+    }
+    .header{
+      margin-top: 50px;
+      text-align: center;
+      
+      background: url(public/frontend/images/bg/lightpaperfibers.png) repeat;
+    }
+    .header h1{
+      font-family: "Quicksand",sans-serif !important;
+    }
+    .hihi li{
+      font-family: "Quicksand",sans-serif !important;
+      margin: 10px 10px 0px;
+      font-size: 20px; margin-top: 40px;
+      border-style: solid; border-radius: 50px; 
+      width: 370px; height: 50px; 
+      background-color:#FFDAB9; 
+      padding-top: 10px; padding-left: 10px;
+
+    }
+    #li1{
+      margin-top: 0px ;
+    }
+    .row1{
+      background: url(public/frontend/images/bg/lightpaperfibers.png) repeat;
+    }
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px; font-style: bold;
+      margin-right: 2px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: pink;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: pink;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .card{
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .modal-title{
+      margin-left: 150px;
+    }
+    #nut{
+      width: 120px; height: 50px; font-size:18px;
+    }
+    .form-group{
+      margin-left: 80px;
+    }
+  </style>
+
+
+
+
+<div class="container">
+
+    <div class="header" style="margin-top: 70px; padding-top: 30px;"><h1 style="color: #b61d4c">DỊCH VỤ</h1> <br> <hr></div>
+    <div class="row">
+      <div class="col-6"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uuNngeO2e0U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+        <div class="col-6">
+          <ul class="hihi">
+            <li id="li1">Dịch vụ chuyên nghiệp, tận tình</li>
+            <li>Liệu trình với công nghệ tiên tiến</li>
+            <li>Nguyên vật liệu đảm bảo an toàn 100%</li>
+            <li>Đội ngũ nhân viên với trình độ cao</li>
+          </ul>
+        </div>
+      </div>  <br><hr>
+      <div class="row1">
+        <div class="container" style=" margin-left: 200px;">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'DieuTriMun')" id="defaultOpen">ĐIỀU TRỊ MỤN</button>
+            <button class="tablinks" onclick="openCity(event, 'DieuTriNam')">ĐIỀU TRỊ NÁM</button>
+            <button class="tablinks" onclick="openCity(event, 'TriSReoRo')">TRỊ SẸO RỖ</button>
+            <button class="tablinks" onclick="openCity(event, 'GiamBeo')">GIẢM BÉO</button>
+            <button class="tablinks" onclick="openCity(event, 'TrietLong')">TRIỆT LÔNG</button>
+            <button class="tablinks" onclick="openCity(event, 'TamTrang')">TẮM TRẮNG</button>
+            <button class="tablinks" onclick="openCity(event, 'PhunXam')">PHUN XĂM</button>
+            <button class="tablinks" onclick="openCity(event, 'ChamSocDa')">CHĂM SÓC DA</button>
+          </div>
+
+          <div id="DieuTriMun" class="tabcontent"> <br>
+            <h2>ĐIỀU TRỊ MỤN</h2>
+            <img src="https://seoulspa.vn/wp-content/uploads/2020/03/dieu-tri-da-mun.jpg">
+            <br>
+            <p>Mụn chính là nỗi ám ảnh lớn của nhiều người, gây nên những tổn thương và dấu hiệu xấu xí trên da mặt. Nếu bạn đang gặp phải tình trạng mụn nhưng không biết cách điều trị mụn hiệu quả thì rất khó để thành công. Hãy cùng tìm hiểu liệu trình điều trị mụn tận gốc tại Thanh Tâm Spa, bạn sẽ thấy ngay hiệu quả rõ rệt của liệu trình này chỉ sau một lần điều trị.</p>
+            <p>Dịch vụ Điều Trị Mụn tại Thanh Tâm spa dứt điểm nỗi lo về mụn ở mặt, mụn lưng với các liệu trình đúng chuẩn Y khoa, chuyên sâu về da liễu. Tư vấn miễn phí ngay hôm nay...</p>
+            <span style="text-align: center;padding-top: 10px; margin-left: 400px;">
+              <button style="height: 50px;background-color:pink; border-radius: 50px;" type="button"  data-toggle="modal" data-target="#myModal">
+                <h3>ĐẶT LỊCH NGAY</h3>
+              </button> <br><br><hr>
+            </span>
+            <!-- The Modal -->
+            <div  class="modal fade" id="myModal" style="margin-top: 150px;margin-left: 300px; height: 500px; width: 600px;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: #49c5c4">ĐẶT LỊCH HẸN</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form class="form-horizontal bucket-form" action="" method="get">
+                      <!-- <input type="hidden" name="_token" value="{!! csrf_token() !!}"> -->
+                    
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Họ và tên</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="user_name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Số điện thoại</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="phone">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label col-lg-3" for="inputSuccess">Tên dịch vụ</label>
+                        <div class="col-lg-6">
+                          <select class="form-control m-bot15" name="dv_name">
+                            <option value=”″>Chọn dịch vụ</option>
+                            <option value=”″>Điều trị da mụn</option>
+                            <option value=”″>Điều trị mụn lưng</option>
+                            <option value=”″>Điều trị huyết thanh tảo</option>
+                            <option value=”″>Điêù trị da chuyên sâu</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Chọn lịch hẹn</label>
+                        <div class="col-sm-6">
+                          <input type="date" class="form-control" name="date">
+                        </div>
+                      </div>
+                      <button id="nut" type="submit" name="save_lich_hen" style="border-radius: 1px; margin-left: 100px; background-color: pink;">Đặt lịch</button> <br>
+                     
+                    </form>
+                    
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2>CÁC DỊCH VỤ ĐIỀU TRỊ MỤN</h2> 
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ DA MỤN</b></p>
+                  <img style="width: 260px;height: 150px;"src="https://seoulspa.vn/wp-content/uploads/2020/03/TRI-MUN-1-300x300.png" > 
+                  <div class="card-body">
+                    Mụn chính là nỗi ám ảnh lớn của nhiều người, gây nên những tổn thương và dấu hiệu xấu xí trên da mặt. Nếu bạn đang gặp tình trạng...<br>
+                    <a href="{{URL::to('/dieu-tri-da-mun')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ MỤN LƯNG</b></p>
+                  <img style="width: 260px;height: 150px;"src="https://seoulspa.vn/wp-content/uploads/2020/03/TRI-MUN-LUNG-1-300x300.png" > 
+                  <div class="card-body">
+                    Hiện nay, tình trạng bị mụn lưng xuất hiện khá nhiều và trở thành vấn đề được nhiều người quan tâm. Hãy cùng Thanh Tâm Spa...<br>
+                    <a href="{{URL::to('/dieu-tri-mun-lung')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col-md-4">
+                <div class="card" style="width: 16rem;">
+                  <p style="border: pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ MỤN Y KHOA</b></p>
+                  <img style="width: 260px;height: 150px;"src="https://seoulspa.vn/wp-content/uploads/2020/05/Thumnail-Tr%E1%BB%8B-M%E1%BB%A5n-Y-Khoa-300x300.png" > 
+                  <div class="card-body">
+                    Có rất nhiều loại mỹ phẩm cũng như phương pháp trị mụn đang được áp dụng. Tuy nhiên trị mụn y khoa vẫn được tin... <br>
+                    <a href="{{URL::to('/dieu-tri-mun-y-khoa')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div> 
+
+              <div class="col-md-4" style="margin-top: 20px;">
+                <div class="card" style="width: 16rem;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ HUYẾT THANH TẢO BIỂN</b></p>
+                  <img style="width: 263px;height: 150px;"src="https://seoulspa.vn/wp-content/uploads/2020/03/HUYET-THANH-TAO-BIEN-300x300.png" > 
+                  <div class="card-body">
+                    Mụn là một bệnh lý về da. Nếu bạn đang gặp phải tình trạng mụn nhưng không biết cách điều trị mụn hiệu quả thì rất khó... <br>
+                    <a href="{{URL::to('/dieu-tri-huyet-thanh-tao-bien')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4" style="margin-top: 20px;">
+                <div class="card" style="width: 16rem;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ MỤN CHUYÊN SÂU</b></p>
+                  <img style="width: 263px;height: 150px;"src="https://seoulspa.vn/wp-content/uploads/2020/05/Thumnail-Tr%E1%BB%8B-M%E1%BB%A5n-Chuy%C3%AAn-S%C3%A2u-300x300.png" > 
+                  <div class="card-body">
+                    Không chỉ ảnh hưởng đến nhan sắc, mụn chính là nguyên nhân khiến nhiều anh chị em trở nên tự ti, đánh mất đi nhiều... <br>
+                    <a href="{{URL::to('/dieu-tri-mun-chuyen-sau')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div id="DieuTriNam" class="tabcontent">
+            <h2 style="margin-top: 20px;">ĐIỀU TRỊ NÁM</h2>
+            <img src="https://seoulspa.vn/wp-content/uploads/2020/03/dieu-tri-nam-da.jpg">
+            <br>
+            <p>Nám là tình trạng không còn xa lạ với phụ nữ. Khi hiện diện trên gương mặt, nám khiến da tối màu và trở nên kém duyên. Điều trị nám tận gốc là một trong những nhu cầu lớn của nhiều chị em khi mắc phải tình trạng này. Tuy nhiên, trị nám da an toàn ở đâu? Nên thực hiện phương pháp nào?</p>
+            <span style="text-align: center;padding-top: 10px; margin-left: 400px;">
+              <button style="height: 50px;background-color:pink; border-radius: 50px;" type="button"  data-toggle="modal" data-target="#myModal1">
+                <h3>ĐẶT LỊCH NGAY</h3>
+              </button> <br><br><hr>
+            </span>
+            <!-- The Modal -->
+            <div  class="modal fade" id="myModal1" style="margin-top: 150px;margin-left: 300px; height: 500px; width: 600px;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: #49c5c4">ĐẶT LỊCH HẸN</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form class="form-horizontal bucket-form" action="" method="get">
+                      <!-- <input type="hidden" name="_token" value="{!! csrf_token() !!}"> -->
+                     
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Họ và tên</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="user_name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Số điện thoại</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="phone">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label col-lg-3" for="inputSuccess">Tên dịch vụ</label>
+                        <div class="col-lg-6">
+                          <select class="form-control m-bot15" name="dv_name">
+                            <option value=”″>Chọn dịch vụ</option>
+                          <option value=”″>Điều trị nám công nghệ PRP 3.0</option>
+                          <option value=”″>Điều trị nám da bằng công nghệ E – Light</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Chọn lịch hẹn</label>
+                        <div class="col-sm-6">
+                          <input type="date" class="form-control" name="date">
+                        </div>
+                      </div>
+                      <button id="nut" type="submit" name="save_lich_hen" style="border-radius: 1px; margin-left: 100px; background-color: pink;">Đặt lịch</button> <br>
+                     
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2>CÁC DỊCH VỤ ĐIỀU TRỊ NÁM</h2> 
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem; margin-left: -100px;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ BẰNG CÔNG NGHỆ PRP 3.0</b></p>
+                  <img style="width: 260px;height: 150px; margin-left: 20px;"src="https://seoulspa.vn/wp-content/uploads/2020/11/dich-vu-web-10.png" > 
+                  <div class="card-body">
+                    Đây là công nghệ điều trị nám chuyên sâu hiện đang được nhiều khách hàng lựa chọn. Thấu hiểu được những lo âu về nám da hiện diện, bác sĩ chuyên khoa của Thanh Tâm Spa trực tiếp ứng dụng công nghệ trị nám PRP 3.0 vào việc trị nám da ...<br>
+                    <a href="{{URL::to('/dieu-tri-nam')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ NÁM BẰNG CÔNG NGHỆ E-LIGHT</b></p>
+                  <img style="width: 260px;height: 150px;margin-left: 20px;"src="https://seoulspa.vn/wp-content/uploads/2020/11/dich-vu-web-12.png" > 
+                  <div class="card-body">
+                    E-light chính là bước đột phá mới trong công nghệ làm đẹp hiện đại. Phương pháp này tác động sâu vào lớp trung bì của da, hút bỏ một phần gốc nám xuất hiện. Bên cạnh đó, dưới tác dụng của nhiệt, E light nhanh chóng đẩy lùi nám ra ngoài qua hệ bài tiết và các tuyến mồ hôi....<br>
+                    <a href="{{URL::to('/dieu-tri-nam')}}" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div> 
+            </div>  
+          </div>
+
+          <div id="TriSReoRo" class="tabcontent">
+            <h2 style="margin-top: 20px;">ĐIỀU TRỊ SẸO RỖ</h2>
+            <img src="https://seoulspa.vn/wp-content/uploads/2020/03/dieu-tri-da-mun.jpg">
+            <br>
+            <p>Sẹo khiến làn da không phẳng mịn, đặc biệt là sẹo rỗ sau mụn làm giảm tự tin, mất thẩm mỹ cho khuôn mặt. Là chuyên gia lâu năm trong lĩnh vực điều trị da, SeoulSpa.Vn sẽ mách bạn cách trị sẹo rỗ hiệu quả nhất để lấy lại làn da như ý.</p>
+            <span style="text-align: center;padding-top: 10px; margin-left: 400px;">
+              <button style="height: 50px;background-color:pink; border-radius: 50px;" type="button"  data-toggle="modal" data-target="#myModal2">
+                <h3>ĐẶT LỊCH NGAY</h3>
+              </button> <br><br><hr>
+            </span>
+            <!-- The Modal -->
+            <div  class="modal fade" id="myModal2" style="margin-top: 150px;margin-left: 300px; height: 500px; width: 600px;">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: #49c5c4">ĐẶT LỊCH HẸN</h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                        <form class="form-horizontal bucket-form" action="" method="get">
+                      <!-- <input type="hidden" name="_token" value="{!! csrf_token() !!}"> -->
+                      {{ csrf_field() }}
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Họ và tên</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="user_name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Số điện thoại</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" name="phone">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label col-lg-3" for="inputSuccess">Tên dịch vụ</label>
+                        <div class="col-lg-6">
+                          <select class="form-control m-bot15" name="dv_name">
+                            <option value=”″>Chọn dịch vụ</option>
+                          <option value=”″>Phi kim PRP 4.0 trị sẹo rỗ</option>
+                          <option value=”″>DR trị sẹo rỗ</option>
+
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Chọn lịch hẹn</label>
+                        <div class="col-sm-6">
+                          <input type="date" class="form-control" name="date">
+                        </div>
+                      </div>
+                      <button id="nut" type="submit" name="save_lich_hen" style="border-radius: 1px; margin-left: 100px; background-color: pink;">Đặt lịch</button> <br>
+                      
+                    </form>
+                        
+                          
+                          
+                        
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2>CÁC DỊCH VỤ ĐIỀU TRỊ SẸO RỖ</h2>  
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem; margin-left: -100px;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>ĐIỀU TRỊ BẰNG PHI KIM PRP 4.0 TRỊ SẸO RỖ</b></p>
+                  <img style="width: 260px;height: 150px; margin-left: 20px;"src="https://seoulspa.vn/wp-content/uploads/2020/09/tri-seo-tan-goc.jpg" > 
+                  <div class="card-body">
+                    Cơ chế của kỹ thuật phi kim chính là: sử dụng các đầu kim siêu nhỏ nano để tác động và tạo vết thương giả trên da. Mục đích của phi kim là đưa các dưỡng chất từ huyết thanh tự thân giàu tiểu cầu giúp tăng sinh collagen vào vị trí đã xâm lấn, làm đầy và hỗ trợ làm mịn vùng da bị sẹo...<br>
+                    <a href="" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                  <p style="border:  pink solid 1px;text-align: center;font-weight: bold;color: #CC3366;"><b>DR TRỊ SẸO RỖ</b></p>
+                  <img style="width: 260px;height: 150px;margin-left: 20px;"src="https://seoulspa.vn/wp-content/uploads/2020/09/spa-tri-seo.jpg" > 
+                  <div class="card-body">
+                    Phương pháp này thực hiện bằng cách sử dụng cắt sẹo bằng đầu phun xăm, sau đó tiêm tinh chất Seeling vào chỗ vừa mới cắt. Từ đó thúc đẩy sinh sôi các tế bào da để trị sẹo rỗ, tiến hành làm lành các vết thương và giúp vùng ca căng mịn, trẻ trung....<br>
+                    <a href="" title="">Xem thêm >...</a> 
+                  </div>
+                </div>
+              </div> 
+            </div>  
+
+            <div id="GiamBeo" class="tabcontent">
+            
+              <h2>hhhh</h2>
+            </div>
+
+            <div id="TrietLong" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="TamTrang" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="PhunXam" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="ChamSocDa" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <!-- copyright ends here --> 
+<!-- End Document
+  ================================================== --> 
+<!-- Scripts ==================================================
+  ================================================== --> 
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < 8; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < 8; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>
