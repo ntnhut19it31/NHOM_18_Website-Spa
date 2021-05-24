@@ -1,0 +1,15 @@
+<% content_for :header do %>
+<section class="hero k">
+  <div class="hero-body">
+    <div class="container">
+      <h2 style="color: #bf005f">
+         Nhập thông tin thêm sản phẩm mới
+      </h2>
+    </div>
+  </div>
+</section>
+<% end %>
+
+<div class="pv4">
+  <%= render 'form', instrument: @instrument %>
+</div>

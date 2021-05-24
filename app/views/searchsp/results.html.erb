@@ -1,0 +1,15 @@
+<h2 >Kết quả tìm kiếm: <%= @sanpham1.size %></h2>
+    <% if @sanpham1.empty? %>
+<p>Không tìm thấy kết quả</p>
+<% else %>
+<ul>
+<% @sanpham1.all.each do |sanpham1|%>
+<li>
+	<div style="width: 300px;height: 280px">
+<p><%= image_tag sanpham1.image %></p>
+	</div>		<br>						
+<p style="font-size: 20px;font-weight: 500;"><%= sanpham1.ten %></p>
+</li>
+<% end %>
+</ul>
+<% end %>
